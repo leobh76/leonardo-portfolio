@@ -198,7 +198,7 @@ export default function Home({ data }) {
   return (
     <div>
       <Head>
-        <title>Leonardo's Portfolio</title>
+        <title>Leonardo - Portfolio</title>
       </Head>
       <NavBar id="top" data={data} />
       <h1 className="mt-5 text-xl sm:text-2xl text-white text-center font-bold">
