@@ -10,7 +10,7 @@ function Skills({ data }) {
         {data.allProgrammingSkills?.map((skill) => (
           <div className="flex flex-col items-center space-y-1" key={skill.id}>
             <img
-              className="w-16 h-16 sm:w-20 sm:h-20 rounded-full"
+              className="w-12 h-12 sm:w-20 sm:h-20 rounded-full"
               src={skill.icon.responsiveImage.src}
               alt={skill.icon.responsiveImage.alt}
             />
@@ -20,7 +20,7 @@ function Skills({ data }) {
         {data.allDesignSkills?.map((skill) => (
           <div className="flex flex-col items-center space-y-1" key={skill.id}>
             <img
-              className="w-16 h-16 sm:w-20 sm:h-20 rounded-full"
+              className="w-12 h-12 sm:w-20 sm:h-20 rounded-full"
               src={skill.icon.responsiveImage.src}
               alt={skill.icon.responsiveImage.alt}
             />
