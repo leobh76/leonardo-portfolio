@@ -35,10 +35,10 @@ function Experience({ data }) {
                 ))}
               </div>
               <h1 className="text-md sm:text-lg text-center text-gray-300">
-                {new Date(experience.dateStarted).toLocaleDateString("CS-cs")} -{" "}
+                {new Date(experience.dateStarted).getFullYear("CS-cs")}
                 {experience.isCurrent
-                  ? "Present"
-                  : new Date(experience.dateEnded).toLocaleDateString("CS-cs")}
+                  ? " - Present"
+                  : ""}
               </h1>
               <p className="text-sm text-gray-300 text-justify">
                 {experience.description}
