@@ -34,15 +34,12 @@ function Experience({ data }) {
                   />
                 ))}
               </div>
-              {experience.isCurrent ? (
-                <h1 className="text-md sm:text-lg text-center text-gray-300">
-                  Current
-                </h1>
-              ) : (
-                <h1 className="text-md sm:text-lg text-center text-gray-300">
-                  {experience.dateStarted} - {experience.dateEnded}
-                </h1>
-              )}
+              <h1 className="text-md sm:text-lg text-center text-gray-300">
+                {new Date(experience.dateStarted).toLocaleDateString("CS-cs")} -{" "}
+                {experience.isCurrent
+                  ? "Present"
+                  : new Date(experience.dateEnded).toLocaleDateString("CS-cs")}
+              </h1>
               <p className="text-sm text-gray-300 text-justify">
                 {experience.description}
               </p>
