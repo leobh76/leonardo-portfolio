@@ -8,7 +8,7 @@ function NavBar({ data }) {
       <ul className="flex space-x-3">
         {data.allContactLinks.map((contactLink) => (
           <li key={contactLink.id}>
-            <Link href={contactLink.address}>
+            <Link target="_blank" href={contactLink.address}>
               <img
                 className="w-7 h-7 hover:scale-125 transform transition duration-200 ease-in-out"
                 src={contactLink.icon.responsiveImage.src}

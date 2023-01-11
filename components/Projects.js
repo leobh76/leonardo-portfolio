@@ -9,7 +9,7 @@ function Projects({ data }) {
       </h1>
       <div className="flex flex-col md:grid grid-cols-2 lg:grid-cols-3 gap-5 mx-5">
         {data.allProjects?.map((project, i) => (
-          <Link key={project.id} href={project.linkToBuild}>
+          <Link target="_blank" key={project.id} href={project.linkToBuild}>
             <div
               className="hover:scale-105 opacity-90 hover:opacity-100 transform duration-200 ease-in-out shadow-inner bg-black/40 p-5 sm:p-10 flex flex-col items-center space-y-5 rounded-lg min-h-full transition-all cursor-pointer hover:after:content-['Go_to_Project'] after:opacity-0
               hover:after:opacity-100 after:absolute after:text-xl after:scale-50 hover:after:scale-100 after:top-1/3 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-gray-900/90 after:shadow-black/70 after:shadow-md after:text-white after:px-3 after:py-2
