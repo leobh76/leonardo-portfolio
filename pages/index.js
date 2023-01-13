@@ -212,7 +212,7 @@ export default function Home({ data }) {
       <Skills data={data} />
       <hr className="border-gray-300 my-5 w-3/4 mx-auto" />
       <Projects data={data} />
-      <hr className="bg-none my-10 mx-auto" />
+      <hr className="opacity-0 my-10 mx-auto" />
       <Footer />
     </div>
   );
