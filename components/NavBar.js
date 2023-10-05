@@ -4,7 +4,7 @@ import React from "react";
 function NavBar({ data }) {
   return (
     <header className="bg-gray-200 opacity-90 px-5 py-3 flex justify-between shadow-md sticky top-0 z-10">
-      <h1 className="text-2xl font-bold">Welcome!</h1>
+      <h1 className="text-2xl text-slate-600 font-bold">Welcome!</h1>
       <ul className="flex space-x-3">
         {data.allContactLinks.map((contactLink) => (
           <li key={contactLink.id}>

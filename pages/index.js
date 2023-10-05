@@ -201,18 +201,20 @@ export default function Home({ data }) {
         <title>Leonardo - Portfolio</title>
       </Head>
       <NavBar id="top" data={data} />
-      <h1 className="mt-5 text-xl sm:text-2xl text-white text-center font-bold">
+      <h1 className="mt-5 text-xl sm:text-2xl text-slate-500 text-center font-bold">
         Leonardo Hurovich - Portfolio
       </h1>
-      <hr className="border-gray-300 my-5 w-1/2 mx-auto" />
-      <About data={data} />
-      <hr className="border-gray-300 my-5 w-3/4 mx-auto" />
-      <Experience data={data} />
-      <hr className="border-gray-300 my-5 w-3/4 mx-auto" />
-      <Skills data={data} />
-      <hr className="border-gray-300 my-5 w-3/4 mx-auto" />
-      <Projects data={data} />
-      <hr className="opacity-0 my-10 mx-auto" />
+      <div className=" max-w-5xl mx-auto">
+        <hr className="border-gray-300 my-5 w-1/2 mx-auto" />
+        <About data={data} />
+        <hr className="border-gray-300 my-5 w-3/4 mx-auto" />
+        <Experience data={data} />
+        <hr className="border-gray-300 my-5 w-3/4 mx-auto" />
+        <Skills data={data} />
+        <hr className="border-gray-300 my-5 w-3/4 mx-auto" />
+        <Projects data={data} />
+        <hr className="opacity-0 my-10 mx-auto" />
+      </div>
       <Footer />
     </div>
   );
