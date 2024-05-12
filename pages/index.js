@@ -58,7 +58,7 @@ const HOMEPAGE_QUERY = `query MyQuery {
       }
     }
   }
-  allExperiences(orderBy: _createdAt_ASC) {
+  allExperiences(orderBy: _updatedAt_DESC) {
     id
     jobTitle
     companyName
